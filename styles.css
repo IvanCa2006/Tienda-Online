@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+article.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+}
+
+article.producto img {
+    max-width: 100%;
+}
+
+section.carrito {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para botones */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para el carrito */
+section.carrito h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section.carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.carrito ul li {
+    margin-bottom: 10px;
+}
+
+/* Cambiar el estilo del botón de "Realizar Compra" */
+section.carrito button {
+    background-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Agregar estilos a los enlaces en el menú de navegación */
+nav a:hover {
+    text-decoration: underline;
+}
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section.productos {
+        flex-direction: column;
+    }
+
+    article.producto {
+        width: 100%;
+    }
+}
